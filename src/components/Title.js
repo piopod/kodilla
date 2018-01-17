@@ -1,3 +1,5 @@
+import React from "react";
+
 var Title = React.createClass({
   propTypes: {
     content: React.PropTypes.string.isRequired
