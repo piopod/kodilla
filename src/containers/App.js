@@ -27,7 +27,7 @@ class App extends React.Component {
     render() {
         return (
             <div className={style.TodoApp}>
-                React.createElement('h1', {Title}, this.props.content);
+                <Title content="TODO App" />
             </div>
         );
     }

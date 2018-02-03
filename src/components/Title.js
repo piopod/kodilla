@@ -1,13 +1,11 @@
-var Title = React.createClass({
-  propTypes: {
-    content: React.PropTypes.string.isRequired
-  },
-  
-  render: function() {
-    return (
-      React.createElement('h1', {}, 'To do app. 10 zadań')
-    )
-  }
-});
+import React from 'react';
 
-// export default console.log;
+const Title = (props) => (
+  <h1>{props.content}</h1>
+);
+
+Title.propTypes = {
+  content: React.PropTypes.string.isRequired
+};
+
+export default Title;
